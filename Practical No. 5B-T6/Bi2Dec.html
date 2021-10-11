@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To Convert Binary To Decimal</title>
+</head>
+
+<body>
+    <header>
+        <h1>Program to converts binary number to decimal number.</h1>
+    </header>
+    <hr />
+
+    <article>
+        <hr />
+
+        <section>
+            <h3>Code</h3>
+            <code>
+        <pre>
+            #include <stdio.h>
+            
+                int main()
+                {
+                    int binnum, decnum=0, i=1, rem;
+                    printf("Enter any Binary Number: " );
+                    scanf ( "%d",&binnum );
+                    while(binnum!=0)
+                    {
+                        rem = binnum%10;
+                        decnum = decnum + (rem*i);
+                        i = i*2;
+                        binnum = binnum/10;
+                    }
+                    printf("\nEquivalent Decimal Value = %d",decnum);
+                    return 0;
+                }
+                  
+            </pre>
+        
+        </code>
+        </section>
+        <hr />
+
+        <section>
+            <h3>Sample input</h3>
+            <kbd>Enter any Binary Number: 100</kbd>
+            <h3>Sample output</h3>
+            <samp>output: 4<samp>
+        </section>
+        <section>
+            <h3>Sample input</h3>
+            <kbd>Enter any Decimal Number: 4</kbd>
+            <h3>Sample output</h3>
+            <samp>output: 100<samp>
+        </section>
+
+        <section>
+            <h3>Variable used in the program</h3>
+            <var>binnum, </var> <var>decnum, </var><var>i, </var>,
+            </var><var>rem
+            </var>
+        </section>
+    </article>
+    <hr />
+
+    <footer>
+        <h4>
+            BINARY TO DECIMAL COVERSION:
+            <br>
+            <a
+                href="https://www.rapidtables.com/convert/number/binary-to-decimal.html">Convertor</a>!
+              <br>
+                <a
+                href="https://flexiple.com/blog/decimal-to-binary-conversion/#:~:text=To%20convert%20a%20binary%20integer,and%20add%20the%20current%20digit).">Blog</a>!
+                
+        </h4>
+    </footer>
+</body>
+
+</html>
