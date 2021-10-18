@@ -1,0 +1,173 @@
+body {
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 30px;
+  padding-top: 20px;
+  margin-top: 0;
+  background: url(images/11.png) fixed repeat;
+}
+.mainbody {
+  background-color: aliceblue;
+  padding: 20px;
+  border: 1px solid black;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  padding-top: 0;
+}
+
+.emailMobile span {
+  padding-left: 10px;
+}
+.emailMobile span a,
+.emailMobile span a:link {
+  text-decoration: none !important;
+}
+
+.mail {
+  text-decoration: none;
+  color: black;
+}
+
+.mail:hover {
+  color: purple;
+}
+.emailMobile .linespan {
+  width: 1px;
+  background-color: black;
+}
+
+.social a {
+  padding-right: 10px;
+}
+
+.social a i {
+  transition: transform 0.2s;
+}
+.social a i:hover {
+  transform: scale(1.5);
+}
+
+header {
+  padding: 20px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 3em;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.edu {
+  background-color: #d5d5ff;
+  padding: 10px;
+}
+table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+}
+
+.tech {
+  text-align: center;
+  background-color: rgb(172, 86, 252);
+  box-sizing: border-box;
+}
+
+.techcol {
+  width: 30%;
+  padding: 10px;
+  height: 150px; /* Should be removed. Only for demonstration */
+  background-color: #ffffff;
+  margin: 10px;
+}
+.techcol div i {
+  padding: 10px;
+}
+
+.techrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp {
+  background-color: rgb(0, 0, 0);
+  color: rgb(172, 86, 252);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.hometown {
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+  background-color: blueviolet;
+}
+.mapouter {
+  text-align: center;
+  margin: auto;
+}
+
+.towntext {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.imggGallery {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(172, 86, 252);
+}
+.imggGallery img {
+  height: 200px;
+}

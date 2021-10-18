@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contactform.css" />
+  </head>
+  <body>
+    <div class="mainpage">
+    <div class="sidevideo">
+      <video autoplay muted loop id="background-video">
+        <source src="video/2.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <div class="contactform">
+      <h1>Contact Me</h1>
+      <div id="error_message"></div>
+      <form id="myform" onsubmit="return validate();">
+        
+        <div class="group input_field">
+            <input class="form-input" type="text"  id="name" />
+            <label class='shrink form-input-label'>Name</label>
+        </div>
+        <div class="group input_field">
+            <input  class="form-input" type="text"  id="email" />
+            <label class='shrink form-input-label'>Email</label>
+        </div>
+        <div class="group input_field">
+            <textarea class="form-input" type="text"  id="message" ></textarea>
+            <label class='shrink form-input-label'>Text</label>
+        </div>
+        
+        
+        <div >
+          <input type="submit" class="custom-button" />
+        </div>
+
+       
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
