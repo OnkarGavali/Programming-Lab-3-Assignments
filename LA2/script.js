@@ -9,27 +9,20 @@ function validate(){
      console.log(message);
     var text;
     if(name.length < 5){
-      text = "Please Enter valid Name";
+      text = "Please Enter valid full Name";
       error_message.innerHTML = text;
-      alert("Form ");
-       console.log('1');
       return false;
     }
     if(email.indexOf("@") == -1 || email.length < 6){
       text = "Please Enter valid Email";
       error_message.innerHTML = text;
-      alert("Submitted");
-       console.log('3');
       return false;
     }
     if(message.length <= 20){
       text = "Please Enter More Than 20 Characters";
       error_message.innerHTML = text;
-      alert("Successfully!");
-       console.log('4');
       return false;
     }
     alert("Form Submitted Successfully!");
-     console.log('555');
     return true;
   }
